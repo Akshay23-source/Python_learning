@@ -1,0 +1,81 @@
+🐍 Today’s Learning – Day 1
+
+Python from Zero
+📅 Date: 05 February 2026
+⏱️ Duration: ~45 minutes
+
+1️⃣ What is Python?
+
+Python is a high-level, easy-to-read programming language used for:
+
+Automation
+
+Data Science
+
+AI / ML
+
+Web Development
+
+Cybersecurity
+
+👉 Why Python?
+
+Simple English-like syntax
+
+Beginner friendly
+
+Powerful & in-demand
+
+2️⃣ Python Installation (Quick Check)
+
+Open Command Prompt / Terminal and type:
+
+python --version
+
+
+If a version appears → ✅ Python is installed
+If not → download from python.org
+
+3️⃣ Your First Python Program
+print("Hello World")
+
+
+📌 print() is used to display output on the screen.
+
+4️⃣ Variables
+
+Variables store data.
+
+name = "Akshay"
+age = 20
+print(name)
+print(age)
+
+Rules:
+
+No spaces in variable names
+
+Use meaningful names
+
+Python decides data type automatically
+
+5️⃣ Data Types (Basics)
+name = "Akshay"   # string
+age = 20          # integer
+height = 5.9      # float
+is_student = True # boolean
+
+6️⃣ Taking Input from User
+name = input("Enter your name: ")
+print("Welcome", name)
+
+
+📌 input() always takes string input.
+
+🧠 Memory Trick
+
+print() → show
+
+input() → take
+
+= → assign
