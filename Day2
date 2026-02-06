@@ -1,0 +1,79 @@
+Topic: Input, Output & Type Casting
+📅 Date: 06 February 2026
+⏱️ Duration: ~45 minutes
+
+1️⃣ Output in Python (print)
+
+Used to show result on screen.
+
+print("Hello Python")
+print(10)
+print(10 + 5)
+
+
+Output
+
+Hello Python
+10
+15
+
+2️⃣ Input in Python (input)
+
+Used to take data from user.
+
+name = input("Enter your name: ")
+print("Welcome", name)
+
+
+⚠️ Important rule
+input() always takes STRING.
+
+3️⃣ Problem You’ll Face (Very Important)
+a = input("Enter a number: ")
+b = input("Enter another number: ")
+print(a + b)
+
+
+If you enter 10 and 20
+❌ Output → 1020
+Why? Because both are strings.
+
+4️⃣ Type Casting (Solution)
+
+Converting one data type into another.
+
+Common type casting:
+
+int() → number
+
+float() → decimal
+
+str() → string
+
+Correct way:
+a = int(input("Enter a number: "))
+b = int(input("Enter another number: "))
+print(a + b)
+
+
+✅ Output → 30
+
+5️⃣ More Examples
+age = int(input("Enter age: "))
+print(age + 1)
+
+price = float(input("Enter price: "))
+print(price)
+
+🧠 Memory Trick
+
+input() → always string
+
+Numbers needed? → wrap with int() or float()
+
+📝 Practice Tasks (Must Do)
+
+1️⃣ Take two numbers from user and print sum
+2️⃣ Take name & age → print sentence
+👉 "My name is ___ and I am ___ years old"
+3️⃣ Take 3 numbers → print their average
