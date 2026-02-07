@@ -1,0 +1,93 @@
+Topic: Conditional Statements (if, else, elif)
+📅 Date: 06 February 2026
+⏱️ Duration: ~45 minutes
+
+1️⃣ What is a Condition?
+
+A condition lets your program make decisions.
+
+👉 Example (real life):
+If it rains → take umbrella
+Else → don’t take
+
+2️⃣ if Statement
+
+Syntax:
+
+if condition:
+    code
+
+
+Example:
+
+age = 18
+
+if age >= 18:
+    print("You are eligible to vote")
+
+3️⃣ if – else
+
+Used when there are two choices.
+
+age = int(input("Enter age: "))
+
+if age >= 18:
+    print("Eligible to vote")
+else:
+    print("Not eligible to vote")
+
+4️⃣ elif (else if)
+
+Used when there are multiple conditions.
+
+marks = int(input("Enter marks: "))
+
+if marks >= 90:
+    print("Grade A")
+elif marks >= 75:
+    print("Grade B")
+elif marks >= 50:
+    print("Grade C")
+else:
+    print("Fail")
+
+5️⃣ Comparison Operators (Very Important)
+Operator	Meaning
+>	greater than
+<	less than
+>=	greater or equal
+<=	less or equal
+==	equal
+!=	not equal
+6️⃣ Logical Operators
+
+Used to combine conditions.
+
+and → both true
+
+or → any one true
+
+not → reverse
+
+Example:
+
+age = 20
+citizen = True
+
+if age >= 18 and citizen:
+    print("Can vote")
+
+🧠 Memory Trick
+
+if → first check
+
+elif → next check
+
+else → nothing matched
+
+📝 Practice Tasks (Must Do)
+
+1️⃣ Check if a number is even or odd
+2️⃣ Take 3 numbers → print largest
+3️⃣ Check if a year is leap year
+4️⃣ Marks → print grade
