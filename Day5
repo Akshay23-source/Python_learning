@@ -1,0 +1,82 @@
+Topic: Functions in Python
+📅 Date: 06 February 2026
+⏱️ Duration: ~45 minutes
+
+1️⃣ What is a Function?
+
+A function is a block of code that:
+
+does a specific task
+
+can be reused many times
+
+👉 Real life:
+Calculator → add, subtract, multiply (each is a function)
+
+2️⃣ Why Functions?
+
+Avoid code repetition
+
+Make code clean & readable
+
+Easy debugging
+
+3️⃣ Function Without Parameters
+Syntax
+def function_name():
+    code
+
+Example
+def greet():
+    print("Hello, welcome to Python")
+
+greet()
+greet()
+
+
+📌 def → define function
+📌 () → function call
+
+4️⃣ Function With Parameters
+
+Parameters = values passed to function
+
+def greet(name):
+    print("Hello", name)
+
+greet("Akshay")
+greet("Python")
+
+5️⃣ Function With Return Value
+
+Used when function gives result back.
+
+def add(a, b):
+    return a + b
+
+result = add(10, 20)
+print(result)
+
+
+📌 return sends value back.
+
+6️⃣ Real Example
+
+Check even or odd using function:
+
+def check_even(num):
+    if num % 2 == 0:
+        return "Even"
+    else:
+        return "Odd"
+
+print(check_even(10))
+print(check_even(7))
+
+🧠 Memory Trick
+
+def → define
+
+() → call
+
+return → give back
