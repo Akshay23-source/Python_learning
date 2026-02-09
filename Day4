@@ -1,0 +1,86 @@
+1️⃣ Why Loops?
+
+Loops are used to repeat work without writing code again and again.
+
+👉 Example:
+Print numbers 1 to 10 (without writing 10 print statements).
+
+2️⃣ for Loop
+
+Used when you know how many times to repeat.
+
+Syntax
+for variable in range(start, end):
+    code
+
+Example
+for i in range(1, 6):
+    print(i)
+
+
+Output
+
+1
+2
+3
+4
+5
+
+
+📌 range(1, 6) → 1 to 5 (end is excluded)
+
+3️⃣ while Loop
+
+Used when repetition depends on a condition.
+
+Syntax
+while condition:
+    code
+
+Example
+i = 1
+while i <= 5:
+    print(i)
+    i += 1
+
+4️⃣ break and continue
+
+Very important in loops.
+
+break → stop loop
+for i in range(1, 10):
+    if i == 5:
+        break
+    print(i)
+
+continue → skip current step
+for i in range(1, 6):
+    if i == 3:
+        continue
+    print(i)
+
+5️⃣ Loop with User Input
+n = int(input("Enter a number: "))
+
+for i in range(1, 11):
+    print(n, "x", i, "=", n*i)
+
+
+👉 This prints multiplication table.
+
+🧠 Memory Trick
+
+for → fixed range
+
+while → condition-based
+
+break → exit
+
+continue → skip
+
+📝 Practice Tasks (Must Do)
+
+1️⃣ Print numbers 1 to 20
+2️⃣ Print even numbers from 1 to 50
+3️⃣ Print multiplication table of a number
+4️⃣ Find sum of first N numbers
