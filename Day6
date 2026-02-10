@@ -1,0 +1,77 @@
+Topic: Strings in Python (Complete Basics)
+
+
+1️⃣ What is a String?
+
+A string is a sequence of characters.
+
+name = "Akshay"
+city = 'Delhi'
+
+
+Strings can be in single or double quotes.
+
+2️⃣ Access Characters (Indexing)
+
+Index starts from 0.
+
+s = "Python"
+print(s[0])   # P
+print(s[3])   # h
+
+
+Negative indexing:
+
+print(s[-1])  # n
+
+3️⃣ String Slicing
+
+Used to get part of string.
+
+s = "Python"
+print(s[0:4])   # Pyth
+print(s[2:])    # thon
+print(s[:3])    # Pyt
+
+4️⃣ String Length
+s = "Python"
+print(len(s))
+
+5️⃣ Common String Methods (VERY IMPORTANT)
+s = "python programming"
+
+print(s.upper())      # PYTHON PROGRAMMING
+print(s.lower())      # python programming
+print(s.title())      # Python Programming
+print(s.capitalize()) # Python programming
+
+Check & Replace
+print(s.find("python"))     # 0
+print(s.replace("python", "java"))
+
+Split & Join
+s = "Python is easy"
+words = s.split()
+print(words)
+
+6️⃣ String Comparison
+a = "madam"
+print(a == a[::-1])
+
+
+👉 Used for palindrome checking.
+
+🧠 Memory Trick
+
+Index → position
+
+Slice → part
+
+Methods → modify string
+
+📝 Practice Tasks (Must Do)
+
+1️⃣ Take a string and print reverse
+2️⃣ Check if string is palindrome
+3️⃣ Count number of characters
+4️⃣ Convert string to uppercase & lowercase
