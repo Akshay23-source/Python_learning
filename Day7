@@ -1,0 +1,75 @@
+Topic: Lists in Python (Very Important)
+📅 Date: 06 February 2026
+⏱️ Duration: ~45 minutes
+
+1️⃣ What is a List?
+
+A list stores multiple values in one variable.
+
+numbers = [10, 20, 30, 40]
+names = ["Akshay", "Rahul", "Ravi"]
+
+
+👉 Lists use square brackets []
+
+2️⃣ Accessing List Elements (Indexing)
+numbers = [10, 20, 30, 40]
+
+print(numbers[0])   # 10
+print(numbers[2])   # 30
+print(numbers[-1])  # 40
+
+3️⃣ List Slicing
+numbers = [10, 20, 30, 40, 50]
+
+print(numbers[1:4])   # [20, 30, 40]
+print(numbers[:3])    # [10, 20, 30]
+
+4️⃣ Modify List
+numbers = [10, 20, 30]
+numbers[1] = 99
+print(numbers)
+
+5️⃣ Important List Methods (Very Important 🔥)
+➕ Add Elements
+numbers = [10, 20]
+numbers.append(30)
+numbers.insert(1, 15)
+
+➖ Remove Elements
+numbers.remove(20)
+numbers.pop()
+
+📊 Other Methods
+numbers.sort()
+numbers.reverse()
+print(len(numbers))
+
+6️⃣ Loop Through List
+numbers = [10, 20, 30]
+
+for num in numbers:
+    print(num)
+
+7️⃣ Sum of List
+numbers = [10, 20, 30]
+print(sum(numbers))
+
+🧠 Memory Trick
+
+[] → list
+
+append() → add at end
+
+insert() → add anywhere
+
+remove() → delete by value
+
+pop() → delete by index
+
+📝 Practice Tasks (Important)
+
+1️⃣ Create a list of 5 numbers → print largest
+2️⃣ Take 5 numbers from user → store in list
+3️⃣ Reverse a list
+4️⃣ Find sum of all elements
