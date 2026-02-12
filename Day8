@@ -1,0 +1,94 @@
+Topic: Tuples & Sets (Very Important Difference)
+
+
+
+1️⃣ Tuples
+What is a Tuple?
+
+A tuple is similar to a list but cannot be changed.
+
+👉 Lists = mutable
+👉 Tuples = immutable
+
+Syntax
+numbers = (10, 20, 30)
+
+
+Notice → round brackets ()
+
+Accessing Tuple Elements
+numbers = (10, 20, 30)
+print(numbers[1])
+
+
+✅ Output:
+
+20
+
+❌ You Cannot Modify Tuple
+numbers[1] = 99
+
+
+This will give:
+
+TypeError
+
+
+Because tuples are fixed.
+
+When to Use Tuple?
+
+When data should NOT change
+
+Faster than list
+
+Used in coordinates, fixed values
+
+2️⃣ Sets
+What is a Set?
+
+A set is:
+
+Unordered
+
+No duplicate values allowed
+
+Syntax
+numbers = {10, 20, 30}
+
+Important Property (No Duplicates)
+numbers = {10, 20, 20, 30}
+print(numbers)
+
+
+✅ Output:
+
+{10, 20, 30}
+
+
+Duplicate removed automatically.
+
+Add & Remove in Set
+numbers.add(40)
+numbers.remove(20)
+
+🔥 Main Differences
+Feature	List	Tuple	Set
+Brackets	[]	()	{}
+Mutable	✅	❌	✅
+Duplicates	✅	✅	❌
+Order	Yes	Yes	No
+🧠 Memory Trick
+
+[] → flexible (list)
+
+() → fixed (tuple)
+
+{} → unique (set)
+
+📝 Practice Tasks
+
+1️⃣ Create a tuple of 5 numbers → print 3rd element
+2️⃣ Try modifying tuple → observe error
+3️⃣ Create a set with duplicates → print result
+4️⃣ Add & remove elements in set
