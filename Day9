@@ -1,0 +1,81 @@
+1️⃣ What is a Dictionary?
+
+A dictionary stores data in key : value format.
+
+👉 Like a real dictionary
+Word → Meaning
+
+Syntax
+student = {
+    "name": "Akshay",
+    "age": 20,
+    "branch": "EEE"
+}
+
+
+Uses curly brackets {}
+
+Data stored as key : value pairs
+
+2️⃣ Accessing Values
+print(student["name"])
+print(student["age"])
+
+
+✅ Output:
+
+Akshay
+20
+
+3️⃣ Modify Dictionary
+student["age"] = 21
+print(student)
+
+4️⃣ Add New Key
+student["college"] = "ABC University"
+
+5️⃣ Remove Key
+student.pop("branch")
+
+6️⃣ Important Dictionary Methods 🔥
+print(student.keys())     # All keys
+print(student.values())   # All values
+print(student.items())    # Key-value pairs
+
+7️⃣ Loop Through Dictionary
+for key in student:
+    print(key, student[key])
+
+
+OR
+
+for key, value in student.items():
+    print(key, value)
+
+🔥 Why Dictionary is Powerful?
+
+Used in APIs
+
+Used in JSON data
+
+Used in databases
+
+Used in ML models
+
+Very important for your future AI/ML goals 👌
+
+🧠 Memory Trick
+
+{} → dictionary
+
+: → separates key & value
+
+.items() → both key & value
+
+📝 Practice Tasks
+
+1️⃣ Create dictionary of 3 subjects & marks
+2️⃣ Update one subject mark
+3️⃣ Add new subject
+4️⃣ Loop and print all key-value pairs
+5️⃣ Find highest mark from dictionary
