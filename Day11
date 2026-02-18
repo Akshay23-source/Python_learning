@@ -1,0 +1,93 @@
+Topic: OOP – Classes & Objects (Very Important)
+
+
+
+1️⃣ What is OOP?
+
+OOP = Object Oriented Programming
+
+Instead of writing everything separately,
+we create objects that contain data + functions.
+
+Real-life example:
+
+Car = object
+
+Color → data
+
+Speed → data
+
+Drive() → function
+
+2️⃣ What is a Class?
+
+A class is a blueprint for creating objects.
+
+Basic Syntax
+class Student:
+    name = "Akshay"
+
+
+Create object:
+
+s1 = Student()
+print(s1.name)
+
+3️⃣ Constructor (__init__) – Very Important 🔥
+
+Constructor runs automatically when object is created.
+
+class Student:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+s1 = Student("Akshay", 20)
+print(s1.name)
+print(s1.age)
+
+What is self?
+
+self refers to the current object.
+
+Think like:
+
+self.name → this object's name
+
+4️⃣ Adding Methods (Functions inside class)
+class Student:
+    def __init__(self, name):
+        self.name = name
+
+    def greet(self):
+        print("Hello, my name is", self.name)
+
+s1 = Student("Akshay")
+s1.greet()
+
+5️⃣ Multiple Objects
+s1 = Student("Akshay")
+s2 = Student("Rahul")
+
+
+Each object has its own data.
+
+🔥 Why OOP is Important?
+
+Used in big software systems
+
+Required in interviews
+
+Used in ML frameworks
+
+Used in game development
+
+🧠 Memory Trick
+
+class → blueprint
+
+object → real thing
+
+__init__ → constructor
+
+self → current object
