@@ -1,0 +1,97 @@
+1️⃣ What is Polymorphism?
+
+Poly = many
+Morph = forms
+
+👉 Same function name, different behavior.
+
+2️⃣ Simple Example (Without OOP)
+print(len("Python"))
+print(len([1, 2, 3, 4]))
+
+Same len() works for:
+
+string
+
+list
+
+This is polymorphism.
+
+3️⃣ Method Overriding (Very Important 🔥)
+
+When child class changes parent method.
+
+Example:
+class Animal:
+    def sound(self):
+        print("Animal makes sound")
+
+class Dog(Animal):
+    def sound(self):
+        print("Dog barks")
+
+d = Dog()
+d.sound()
+
+✅ Output:
+
+Dog barks
+
+Child overrides parent method.
+
+4️⃣ Calling Parent Method Using super()
+class Animal:
+    def sound(self):
+        print("Animal makes sound")
+
+class Dog(Animal):
+    def sound(self):
+        super().sound()
+        print("Dog barks")
+
+d = Dog()
+d.sound()
+5️⃣ Method Overloading in Python
+
+Python doesn’t support true overloading like Java.
+But we simulate using default arguments.
+
+def add(a, b=0, c=0):
+    return a + b + c
+
+print(add(5))
+print(add(5, 10))
+print(add(5, 10, 15))
+🔥 Why This Matters?
+
+Polymorphism:
+
+Used in large systems
+
+Used in frameworks
+
+Very common in interviews
+
+🧠 Memory Trick
+
+Same name → different behavior
+
+Child changes parent → overriding
+
+super() → access parent version
+
+📝 Practice Tasks
+
+1️⃣ Create class Shape
+
+method area()
+
+2️⃣ Create Circle class
+
+override area()
+
+3️⃣ Create Rectangle class
+
+override area()
+
+4️⃣ Call all objects and observe different outputs
