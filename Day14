@@ -1,0 +1,87 @@
+Topic: Modules & Packages (How Real Projects Work)
+
+📅 Date: 06 February 2026
+⏱️ Duration: ~45 minutes
+
+1️⃣ What is a Module?
+
+A module is simply a Python file (.py) that contains functions, variables, or classes.
+
+Example:
+
+👉 math is a built-in module.
+
+import math
+
+print(math.sqrt(25))
+print(math.pi)
+2️⃣ Types of Modules
+
+Built-in (math, random, datetime)
+
+User-defined (your own .py file)
+
+External (pip install)
+
+3️⃣ Importing Modules
+Normal Import
+import math
+print(math.sqrt(16))
+Import Specific Function
+from math import sqrt
+print(sqrt(16))
+Rename Module
+import math as m
+print(m.pi)
+4️⃣ Create Your Own Module 🔥
+
+Create file: my_module.py
+
+def greet(name):
+    return "Hello " + name
+
+def add(a, b):
+    return a + b
+
+Now in another file:
+
+import my_module
+
+print(my_module.greet("Akshay"))
+print(my_module.add(10, 20))
+5️⃣ What is a Package?
+
+A package is a folder containing multiple modules.
+
+Example structure:
+
+project/
+    main.py
+    utils/
+        math_tools.py
+        string_tools.py
+
+Folder must contain:
+
+__init__.py
+
+Then you can import like:
+
+from utils import math_tools
+🔥 Why Modules & Packages Matter?
+
+Used in large projects
+
+Required for scalable systems
+
+Used in ML libraries
+
+Used in backend development
+
+🧠 Memory Trick
+
+File = Module
+
+Folder of modules = Package
+
+import → use external code
