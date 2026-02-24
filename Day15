@@ -1,0 +1,65 @@
+Topic: List Comprehension & Advanced Data Handling
+
+📅 Date: 06 February 2026
+⏱️ Duration: ~45 minutes
+
+1️⃣ What is List Comprehension?
+
+It is a short and powerful way to create lists.
+
+Normal Way
+numbers = []
+
+for i in range(1, 6):
+    numbers.append(i)
+
+print(numbers)
+List Comprehension Way 🔥
+numbers = [i for i in range(1, 6)]
+print(numbers)
+
+Much cleaner.
+
+2️⃣ With Condition
+Normal Way
+even = []
+
+for i in range(1, 11):
+    if i % 2 == 0:
+        even.append(i)
+List Comprehension
+even = [i for i in range(1, 11) if i % 2 == 0]
+print(even)
+3️⃣ Square of Numbers
+squares = [i*i for i in range(1, 6)]
+print(squares)
+4️⃣ Working with Strings
+words = ["python", "java", "c++"]
+
+upper_words = [word.upper() for word in words]
+print(upper_words)
+5️⃣ Dictionary Comprehension 🔥
+squares = {i: i*i for i in range(1, 6)}
+print(squares)
+
+Output:
+
+{1:1, 2:4, 3:9, 4:16, 5:25}
+6️⃣ Set Comprehension
+unique_squares = {i*i for i in range(1, 6)}
+print(unique_squares)
+🔥 Why This Is Important?
+
+Makes code shorter
+
+Used in interviews
+
+Used in data science
+
+Makes you look like pro programmer 😎
+
+🧠 Memory Trick
+
+Structure:
+
+[expression for item in iterable if condition]
