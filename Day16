@@ -1,0 +1,92 @@
+Topic: Lambda, map(), filter(), reduce()
+
+📅 Date: 06 February 2026
+⏱️ Duration: ~45 minutes
+
+1️⃣ What is a Lambda Function?
+
+A lambda is a small anonymous function.
+
+Normal function:
+
+def square(x):
+    return x * x
+
+print(square(5))
+Lambda Version 🔥
+square = lambda x: x * x
+print(square(5))
+
+👉 Short and powerful.
+
+2️⃣ Lambda with Multiple Arguments
+add = lambda a, b: a + b
+print(add(10, 20))
+3️⃣ map() Function
+
+Used to apply a function to every item in a list.
+
+Without map()
+numbers = [1, 2, 3, 4]
+squares = []
+
+for n in numbers:
+    squares.append(n * n)
+
+print(squares)
+With map() 🔥
+numbers = [1, 2, 3, 4]
+squares = list(map(lambda x: x*x, numbers))
+print(squares)
+4️⃣ filter() Function
+
+Used to filter elements based on condition.
+
+numbers = [1, 2, 3, 4, 5, 6]
+
+even = list(filter(lambda x: x % 2 == 0, numbers))
+print(even)
+
+Output:
+
+[2, 4, 6]
+5️⃣ reduce() Function
+
+Used to reduce list into single value.
+
+from functools import reduce
+
+numbers = [1, 2, 3, 4]
+
+total = reduce(lambda a, b: a + b, numbers)
+print(total)
+
+Output:
+
+10
+🔥 When Are These Used?
+
+Data science
+
+ML preprocessing
+
+Clean & compact code
+
+Interviews
+
+🧠 Memory Trick
+
+lambda → short function
+
+map → transform
+
+filter → select
+
+reduce → combine
+
+📝 Practice Tasks
+
+1️⃣ Use lambda to multiply 2 numbers
+2️⃣ Use map to find cube of list
+3️⃣ Use filter to get numbers > 10
+4️⃣ Use reduce to multiply all numbers
