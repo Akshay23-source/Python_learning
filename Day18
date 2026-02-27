@@ -1,0 +1,89 @@
+1️⃣ What is a Decorator?
+
+A decorator is a function that:
+
+Takes another function
+
+Adds extra functionality
+
+Without modifying original function
+
+👉 Think like:
+You wrap a gift 🎁
+Gift remains same, but presentation improves.
+
+2️⃣ Basic Function Example
+def greet():
+    print("Hello")
+
+Now suppose we want:
+
+Print something before and after greet()
+
+Instead of changing greet(), we use decorator.
+
+3️⃣ Basic Decorator Structure 🔥
+def my_decorator(func):
+    def wrapper():
+        print("Before function")
+        func()
+        print("After function")
+    return wrapper
+
+Now apply it:
+
+@my_decorator
+def greet():
+    print("Hello")
+
+greet()
+
+Output:
+
+Before function
+Hello
+After function
+4️⃣ How It Actually Works
+
+This:
+
+@my_decorator
+def greet():
+
+Is same as:
+
+greet = my_decorator(greet)
+5️⃣ Decorator with Arguments
+def my_decorator(func):
+    def wrapper(name):
+        print("Before function")
+        func(name)
+        print("After function")
+    return wrapper
+
+@my_decorator
+def greet(name):
+    print("Hello", name)
+
+greet("Akshay")
+6️⃣ Why Decorators Are Important?
+
+Used in:
+
+Flask / Django (web frameworks)
+
+Logging
+
+Authentication
+
+Performance timing
+
+ML pipelines
+
+🧠 Memory Trick
+
+Decorator = function wrapper
+
+@ → apply decorator
+
+wrapper → extra functionality
