@@ -1,0 +1,112 @@
+Topic: Virtual Environments & pip (Professional Python Setup)
+
+📅 Date: 06 March 2026
+⏱️ Duration: ~45 minutes
+
+1️⃣ What is pip?
+
+pip is Python’s package manager.
+
+It allows you to install external libraries.
+
+Example libraries:
+
+numpy
+
+pandas
+
+flask
+
+requests
+
+tensorflow
+
+Install a Package
+pip install numpy
+
+Check installed packages:
+
+pip list
+
+Upgrade a package:
+
+pip install --upgrade numpy
+
+Uninstall:
+
+pip uninstall numpy
+2️⃣ Why Virtual Environments?
+
+Different projects need different versions of libraries.
+
+Without virtual environments → conflicts happen.
+
+Virtual environments create isolated Python environments.
+
+3️⃣ Creating Virtual Environment
+
+Inside your project folder:
+
+python -m venv myenv
+
+This creates a folder called myenv.
+
+4️⃣ Activate Virtual Environment
+Windows
+myenv\Scripts\activate
+
+You will see:
+
+(myenv) C:\project>
+
+Now packages install only inside this project.
+
+5️⃣ Deactivate Environment
+deactivate
+6️⃣ Why Developers Use This
+
+Virtual environments are used in:
+
+Web development
+
+Data science projects
+
+AI/ML projects
+
+Production software
+
+🧠 Memory Trick
+
+pip → install libraries
+
+venv → isolate environment
+
+activate → start environment
+
+deactivate → exit
+
+📝 Practice Tasks
+
+1️⃣ Create a virtual environment
+2️⃣ Activate it
+3️⃣ Install requests library
+
+pip install requests
+
+4️⃣ Run:
+
+import requests
+print("Library installed successfully")
+🚀 Next Topics (Final Advanced Python)
+
+Coming lessons will include:
+
+Multithreading
+
+Multiprocessing
+
+APIs
+
+Automation scripts
+
+Mini projects
