@@ -1,0 +1,116 @@
+Topic: Multithreading in Python
+
+📅 Date: 12 March 2026
+⏱️ Duration: ~45 minutes
+
+1️⃣ What is Multithreading?
+
+Multithreading allows a program to run multiple tasks at the same time.
+
+Example in real life:
+
+Computer doing:
+
+Download file
+
+Play music
+
+Run program
+
+All simultaneously.
+
+2️⃣ Why Use Multithreading?
+
+Used when tasks involve:
+
+Waiting (network calls)
+
+File reading
+
+APIs
+
+Automation scripts
+
+It improves performance and efficiency.
+
+3️⃣ Python Thread Module
+
+Python provides the threading module.
+
+Basic structure:
+
+import threading
+4️⃣ Creating a Thread
+
+Example:
+
+import threading
+
+def task():
+    print("Thread is running")
+
+t = threading.Thread(target=task)
+
+t.start()
+
+Output:
+
+Thread is running
+5️⃣ Multiple Threads Example
+import threading
+
+def print_numbers():
+    for i in range(5):
+        print(i)
+
+def print_letters():
+    for letter in ["A", "B", "C", "D"]:
+        print(letter)
+
+t1 = threading.Thread(target=print_numbers)
+t2 = threading.Thread(target=print_letters)
+
+t1.start()
+t2.start()
+
+Both run simultaneously.
+
+6️⃣ join() Method
+
+Ensures thread finishes before program continues.
+
+t1.join()
+t2.join()
+
+Example:
+
+t1.start()
+t2.start()
+
+t1.join()
+t2.join()
+
+print("Program finished")
+7️⃣ Real Uses of Multithreading
+
+Used in:
+
+Web scraping
+
+Download managers
+
+Servers
+
+Automation tools
+
+Game engines
+
+🧠 Memory Trick
+
+threading → module
+
+Thread() → create thread
+
+start() → run thread
+
+join() → wait for thread
