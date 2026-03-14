@@ -1,0 +1,119 @@
+1️⃣ What is an API?
+
+API = Application Programming Interface
+
+It allows programs to communicate with other programs or servers.
+
+Example:
+
+Weather apps get data from weather servers
+
+Payment apps connect to banking servers
+
+Social media apps fetch posts from servers
+
+Python can request data from APIs.
+
+2️⃣ Library Used for APIs
+
+Most commonly used library:
+
+requests
+
+Install it:
+
+pip install requests
+3️⃣ Simple API Request
+
+Example:
+
+import requests
+
+response = requests.get("https://api.github.com")
+
+print(response.status_code)
+print(response.text)
+Explanation
+Code	Meaning
+requests.get()	request data
+status_code	server response
+text	returned data
+4️⃣ Working with JSON Data
+
+Most APIs return JSON.
+
+Example:
+
+import requests
+
+response = requests.get("https://api.github.com")
+
+data = response.json()
+
+print(data)
+5️⃣ Example: Get Random Joke
+import requests
+
+url = "https://official-joke-api.appspot.com/random_joke"
+
+response = requests.get(url)
+
+joke = response.json()
+
+print(joke["setup"])
+print(joke["punchline"])
+
+Example output:
+
+Why did the computer go to the doctor?
+Because it caught a virus!
+6️⃣ Why APIs Are Important
+
+APIs are used in:
+
+Web development
+
+Mobile apps
+
+AI applications
+
+Cloud computing
+
+Automation tools
+
+This is a very powerful real-world skill.
+
+🧠 Memory Trick
+
+API workflow:
+
+Client → Request → Server → Response
+
+Python acts as the client.
+
+📝 Practice Tasks
+
+1️⃣ Install requests library
+2️⃣ Fetch data from:
+
+https://api.github.com
+
+3️⃣ Print:
+
+status code
+
+returned JSON
+
+4️⃣ Create program that prints random joke
+
+🚀 Next Topics
+
+Next lessons will include:
+
+Web scraping with Python
+
+Automation scripts
+
+Real Python projects
+
+These are skills companies love
